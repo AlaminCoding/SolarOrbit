@@ -11,7 +11,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 document.body.appendChild(renderer.domElement);
 
 const geometry = new THREE.SphereGeometry(10, 30, 30);
-const sunTexture = new THREE.TextureLoader().load("/sun.jpg");
+const sunTexture = new THREE.TextureLoader().load("https://i.postimg.cc/KzW8nd4x/sun.jpg");
 const material = new THREE.MeshBasicMaterial({
   map: sunTexture,
   transparent: true,
@@ -21,7 +21,7 @@ const sun = new THREE.Mesh(geometry, material);
 
 const earthGeo = new THREE.SphereGeometry(5, 30, 30);
 
-const earthTexture = new THREE.TextureLoader().load("/earth.jpg");
+const earthTexture = new THREE.TextureLoader().load("https://i.postimg.cc/NMF02gsd/earth.jpg");
 const earthMat = new THREE.MeshPhongMaterial({
   map: earthTexture,
   transparent: true,
